@@ -7,7 +7,23 @@
 	<packaging>war</packaging>
 	<name>Hello World Web Application Repository</name>
 	<description>Simplest possible Java Webapp</description>
-
+	
+        <distributionManagement>
+	
+	    <repository>
+	      <id>nexus</id>
+	      <name>Mithun Technologies Releases Nexus Repository</name>
+	      <url>http://204.236.209.238:8081/repository/web-release/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>Mithun Technologies Snapshot Nexus Repository </name>
+	      <url>http://204.236.209.238:8081/repository/web-snapshot/</url>
+	    </snapshotRepository>
+	    
+	</distributionManagement>
+	
 	<build>
 		<plugins>
 			<plugin>
